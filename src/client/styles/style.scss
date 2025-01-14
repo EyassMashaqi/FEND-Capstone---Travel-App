@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  /* Main Section */
+  main {
+    max-width: 900px;
+    margin: 2em auto;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section for My Trips */
+  #my-trips {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  
+  #my-trips h2 {
+    font-size: 1.5rem;
+    color: #444;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  
+  form label {
+    flex: 1 1 100%;
+    font-weight: bold;
+  }
+  
+  form input {
+    padding: 0.8em;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1 1 auto;
+  }
+  
+  form button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 0.8em 1.5em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #e65a4f;
+  }
+  
+  /* Results Section */
+  .trip-results {
+    margin-top: 2em;
+  }
+  
+  .trip-results h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1em;
+    color: #ff6f61;
+  }
+  
+  .trip-results img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trip-results p {
+    font-size: 1.2rem;
+    margin: 0.5em 0;
+  }
+  
+  .btn {
+    background-color: #6b8e23;
+    color: white;
+    padding: 0.8em 1em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #556b2f;
+  }
+  
+  /* Additional Styling for Buttons */
+  .trip-results .btn {
+    margin: 1em 0.5em 0 0;
+  }
+  
+  .trip-results .btn:last-child {
+    margin-right: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    form {
+      flex-direction: column;
+    }
+  
+    form input,
+    form button {
+      width: 100%;
+    }
+  }
+  
