@@ -58,7 +58,12 @@ app.post('/getData', async (req, res) => {
   }
 });
 
-// Start the server
-app.listen(8081, () => {
-  console.log('Server running on port 8081');
-});
+// Export the app for testing
+module.exports = app;
+
+// Start the server only when not in test mode
+if (require.main === module) {
+  app.listen(8081, () => {
+    console.log('Server running on port 8081');
+  });
+}

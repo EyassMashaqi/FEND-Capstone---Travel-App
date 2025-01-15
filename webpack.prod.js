@@ -27,6 +27,30 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/client/views/index.html',
     }),
-    new WorkboxPlugin.GenerateSW(),
+    new WorkboxPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true,
+      runtimeCaching: [
+        {
+          urlPattern: /\.(?:png|jpg|jpeg|svg|gif)$/,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'images',
+            expiration: {
+              maxEntries: 50,
+              maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+            },
+          },
+        },
+        {
+          urlPattern: /^https:\/\/api\.weatherbit\.io/,
+          handler: 'NetworkFirst',
+          options: {
+            cacheName: 'api-data',
+            networkTimeoutSeconds: 10,
+          },
+        },
+      ],
+    }),
   ],
 };
