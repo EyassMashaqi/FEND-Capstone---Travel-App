@@ -20,3 +20,6 @@ Other Libraries:
 Axios (for API requests)
 CORS (for cross-origin requests)
 Dotenv (for environment variable management)
+
+Prerequisites
+Node.js: v20.18.2
