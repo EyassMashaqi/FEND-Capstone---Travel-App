@@ -11,13 +11,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Travel Planner\r The Travel Planner is a dynamic web application that allows users to plan trips, save trip-related information, and visualize weather forecasts. Users can also add lodging information, packing lists, and personal notes for each trip.",
   "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
+    "@babel/core": "^7.26.7",
+    "@babel/preset-env": "^7.26.7",
     "axios": "^1.7.9",
     "babel-jest": "^29.7.0",
     "babel-loader": "^9.2.1",
+    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.2",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
@@ -33,11 +34,20 @@
     "workbox-webpack-plugin": "^7.3.0"
   },
   "dependencies": {
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "path": "^0.12.7"
   },
   "jest": {
     "transform": {
       "^.+\\.js$": "babel-jest"
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EyassMashaqi/FEND-Capstone---Travel-App.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EyassMashaqi/FEND-Capstone---Travel-App/issues"
+  },
+  "homepage": "https://github.com/EyassMashaqi/FEND-Capstone---Travel-App#readme"
 }
